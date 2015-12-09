@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2015 年 12 月 09 日 18:42
+-- 生成日期: 2015 年 12 月 09 日 21:36
 -- 服务器版本: 5.6.13
 -- PHP 版本: 5.3.27
 
@@ -43,12 +43,12 @@ CREATE TABLE IF NOT EXISTS `student` (
 --
 
 INSERT INTO `student` (`id`, `sno`, `name`, `grade`, `category`, `categoryid`, `dept`, `class`) VALUES
-(2, 2, '姣姣', 100, '数学', 1, '女生部', 2),
-(3, 3, '丽丽', 100, '语文', 2, '新闻院', 2),
-(4, 4, '怡怡', 99, '语文', 2, '艺术学系', 3),
-(5, 1, '星星', 100, '数学', 1, '计院', 4),
-(7, 5, '朱星滔', 100, '软件工程', 3, '计院', 3),
-(8, 6, '小笨蛋', 59, '数学', 1, '计院', 2);
+(2, 2, '姣姣', 100, '数学', 2, '女生部', 2),
+(3, 3, '丽丽', 100, '语文', 1, '新闻院', 2),
+(4, 4, '怡怡', 99, '语文', 1, '艺术学系', 3),
+(5, 1, '星星', 100, '数学', 2, '计院', 4),
+(7, 5, '朱星滔', 100, '英语', 3, '计院', 3),
+(8, 6, '小笨蛋', 59, '数学', 2, '计院', 2);
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` varchar(128) NOT NULL,
   `email` varchar(20) NOT NULL,
   PRIMARY KEY (`tno`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `user`
@@ -95,6 +95,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`tno`, `username`, `userid`, `password`, `email`) VALUES
 (1, '赵健', 'zxt', '202cb962ac59075b964b07152d234b70', '594140838@qq.com'),
+(2, '小明', 'zhm', '202cb962ac59075b964b07152d234b70', '594140838@qq.com'),
 (3, 'root', 'root', '63a9f0ea7bb98050796b649e85481845', '594140838@qq.com'),
 (4, '陈端直', 'cdz', '202cb962ac59075b964b07152d234b70', '');
 
